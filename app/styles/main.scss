@@ -11,11 +11,11 @@ body {
 
 .hero-unit {
   margin: 50px auto 0 auto;
-  width: 600px;
+  width: 650px;
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
-  background-color: #eee;
+  background-color: none;
   border-radius: 6px;
   padding: 60px;
   h1 {
@@ -24,3 +24,14 @@ body {
     letter-spacing: -1px;
   }
 }
+button {
+  padding-left: 6px;
+  padding-right: 6px;
+  width: 20px;
+  height: 20px;
+  background: none;
+  color: white;
+  background: -moz-linear-gradient(0% 100% 90deg, #377ad0, #52a8e8);
+  }
+
+
