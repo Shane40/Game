@@ -10,8 +10,9 @@ body {
 }
 
 .container{
-  background: white;margin: 50px auto 0 auto;
-  width: 850px;
+  background: white;
+  margin: 30px auto 0 auto;
+  width: 750px;
   font-weight: 200;
   line-height: 30px;
   background-color: none;
@@ -21,25 +22,28 @@ body {
   border: 4px double HSLA(357, 72%, 60%, 1);
   
   img {
-   margin-top: -10px; 
+margin-top: -60px;
     width: 550px;
-    margin-left: 90px;
+    margin-left: 30px;
     margin-top: -20px;
     }
   
   h1 {
-    font-size: 90px;
-    margin-top: -30px;
-    text-align: center;
+    font-size: 97px;
+    margin-top: -20px;
     width: 750px;
     font-family: 'Raleway', sans-serif;
     line-height: 1;
     margin-bottom: 25px;
     }
+    button {
+        display: inline;
+        width: 60px;
+        height: 60px;
+    }
+}
+.board {
 
-    .board {
-      margin: 30px auto;
       display: inline;
       width: 120px;
     }
-}
