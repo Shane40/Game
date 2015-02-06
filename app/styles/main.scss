@@ -4,7 +4,7 @@
 
 // Custom Styles
 body {
-  background-color: #cccccc;
+  background-color: lightgray;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
 }
@@ -12,33 +12,52 @@ body {
 .container{
   background: white;
   margin: 30px auto 0 auto;
-  width: 750px;
-  font-weight: 200;
+  width: 1020px;
   line-height: 30px;
   background-color: none;
   border-radius: 6px;
   padding: 60px;
-  border-radius: 4px;
-  border: 4px double HSLA(357, 72%, 60%, 1);
+  height: 1500px;
   
-  img {
-margin-top: -60px;
-    width: 550px;
-    margin-left: 30px;
-    margin-top: -20px;
+
+  .angrycat {
+    width: 900px;
+    border: 1px solid lightgray;
+    margin-left: 0px;
+    margin-top: -10px;
+    }
+  .angrydog {
+    width: 900px;
+    border: 1px solid lightgray;
+    margin-left: 0px;
     }
   
   h1 {
-    font-size: 97px;
+    font-size: 210px;
+    margin-top: 10px;
+    margin-left: -5px;
+    width: 900px;
+    // font-family: 'Raleway', sans-serif;
+    font-family: 'Patua One', cursive;
+    line-height: 1;
+    margin-bottom: 1px;
+    text-transform: uppercase;
+    color: hsla(0, 68%, 50%, 1);
+    }
+      h2 {
+    font-size: 93px;
     margin-top: -20px;
-    width: 750px;
-    font-family: 'Raleway', sans-serif;
+    margin-left: -5px;
+    width: 900px;
+    // font-family: 'Raleway', sans-serif;
+    font-family: 'Patua One', cursive;
     line-height: 1;
     margin-bottom: 25px;
+    text-transform: uppercase;
     }
     button {
         display: inline;
-        width: 60px;
+        width: 150px;
         height: 60px;
     }
 }
