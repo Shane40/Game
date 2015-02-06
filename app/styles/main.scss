@@ -4,65 +4,109 @@
 
 // Custom Styles
 body {
-  background-color: lightgray;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+  @include background-image(linear-gradient(left, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 43%, rgba(255,255,255,1) 77%, rgba(255,255,255,1) 100%));
 }
 
 .container{
   background: white;
-  margin: 30px auto 0 auto;
+  margin: 50px auto 0 auto;
   width: 1020px;
   line-height: 30px;
   background-color: none;
   border-radius: 6px;
+  border: 4px double hsla(0, 58%, 50%, 1);
   padding: 60px;
-  height: 1500px;
-  
+  overflow: auto;
 
   .angrycat {
-    width: 900px;
-    border: 1px solid lightgray;
-    margin-left: 0px;
+    width: 450px;
     margin-top: -10px;
+    margin-right: 6px;
+    float: left;
     }
   .angrydog {
-    width: 900px;
-    border: 1px solid lightgray;
+    width: 450px;
     margin-left: 0px;
+    float: right;
+    margin-top: -254px;
     }
   
   h1 {
     font-size: 210px;
-    margin-top: 10px;
+    margin-top: 60px;
     margin-left: -5px;
     width: 900px;
     // font-family: 'Raleway', sans-serif;
     font-family: 'Patua One', cursive;
     line-height: 1;
-    margin-bottom: 1px;
+    margin-bottom: 0px;
     text-transform: uppercase;
-    color: hsla(0, 68%, 50%, 1);
+    color: hsla(0, 58%, 50%, 1);
     }
       h2 {
     font-size: 93px;
-    margin-top: -20px;
+    margin-top: -24px;
     margin-left: -5px;
     width: 900px;
     // font-family: 'Raleway', sans-serif;
     font-family: 'Patua One', cursive;
     line-height: 1;
-    margin-bottom: 25px;
+    margin-bottom: 12px;
     text-transform: uppercase;
     }
+
+    .cat {
+      margin-left: 122px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 900;
+      font-size: 22px;
+      float: left;
+      width: 300px;
+      margin-right: 35px;
+    }
+    .cat p {
+      margin-bottom: 0px;
+      text-align: center;
+    }
+    input {
+      float: left;
+      font-weight: 300;
+      width: 300px;
+      text-align: center;
+    }
+    input:nth-child(1) {
+      float: left;
+      font-weight: 300;
+    }
     button {
-        display: inline;
-        width: 150px;
-        height: 60px;
+      display: inline;
+      font-weight: 300;
+      font-size: 20px;
+      border-radius: 3px;
+      line-height: 1;
+      height: 40px;
+      width: 150px;
+      float: left;
+      color: white;
+      background-color: hsla(0, 58%, 50%, 1);
+      margin-bottom: 0px;
+      margin-top: 8px;
+      box-shadow: 5px 5px 5px #888888;
+    }
+    .dog {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 900;
+      width: 350px;
+      font-size: 22px;
+      float: left;
+      padding-right: 35px;
+      margin-top: 0px;
+    }
+    .dog p {
+      margin-bottom: 0px;
+      text-align: center;
     }
 }
-.board {
 
-      display: inline;
-      width: 120px;
-    }
+
+    

@@ -11,6 +11,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
     <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
 
     <!-- endbower -->
@@ -29,36 +30,34 @@
       
  <!--    <img src="images/dogandcat.jpg"> -->
 <img class="angrycat" src="images/angrycat.jpg">
+<img class="angrydog" src="images/dogangry.jpg">
+
 <h1>Fighting</h1>
 <h2>like cats and dogs!</h2>
 
 <!-- Class of cat -->
-    <div class="cat">
-        My name is Fifi
+    <span class="cat">
+       <p>Player 1: Fifi</p>
         <input type = "text" id = "catHealth" value = "100" />
-    </div>
+   
 
-    <button id="catAttack" > Cat pounces on dog </button>
+    <button id="catAttack" > Cat claws  </button>
+    <button id="catBigAttack" > Cat pounces </button>
+     </span>
+
 
 
 <!-- Class of dog -->
-    <div class="dog">
-        My name is Fido
+    <span class="dog">
+        <p>Player 2: Fido</p>
         <input type = "text" id="dogHealth" value = "100" />
-    </div>
+    
 
-     <button id="dogAttack" > Dog attacks </button>
-
-<img class="angrydog" src="images/dogangry.jpg">
-
+     <button id="dogAttack" > Dog growls </button>
+      <button id="dogBigAttack" > Dog bites </button>
+     </span>
 </div>
-
-
-
-
-
-<button id ="dogAttack" > Dog attack </button>
-
+<!-- ends container div -->
 
 
 
@@ -70,29 +69,6 @@
 
 
 
-
-
-<!-- TIC TAC TOE HELL
-<button onclick="myFunction()"> </button>
-            <p id="move1"></p>
-<button onclick="myFunction()"> </button>
-            <p id="move2"></p>
-<button onclick="myFunction()"> </button>
-            <p id="move3"></p>
-<button onclick="myFunction()"> </button>
-            <p id="move4"></p>
- -->
-<!-- <canvas id = "canvas2"  width="200" height="200" style="border:1px solid lightgray" onclick="canvasClicked(2)"></canvas>
-<canvas id = "canvas3"  width="200" height="200" style="border:1px solid lightgray" onclick="canvasClicked(3)"></canvas>
-<br>
-<canvas id = "canvas4"  width="200" height="200" style="border:1px solid lightgray" onclick="canvasClicked(4)"></canvas>
-<canvas id = "canvas5"  width="200" height="200" style="border:1px solid lightgray" onclick="canvasClicked(5)"></canvas>
-<canvas id = "canvas6"  width="200" height="200" style="border:1px solid lightgray" onclick="canvasClicked(6)"></canvas>
-<br>
-<canvas id = "canvas7"  width="200" height="200" style="border:1px solid lightgray" onclick="canvasClicked(7)"></canvas>
-<canvas id = "canvas8"  width="200" height="200" style="border:1px solid lightgray" onclick="canvasClicked(8)"></canvas>
-<canvas id = "canvas9"  width="200" height="200" style="border:1px solid lightgray" onclick="canvasClicked(9)"></canvas>
-</span> -->
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>

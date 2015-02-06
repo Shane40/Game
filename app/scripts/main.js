@@ -28,11 +28,19 @@ console.log("This is the scary game");
 // Set up variables and player elements
 
 var catHealth = $('#catHealth'),
-	attackBTN = $('#catAttack'),
+	attackBTN1 = $('#catAttack'),
+	catDamage;
+
+var catHealth = $('#catHealth'),
+	attackBTN2 = $('#catBigAttack'),
 	catDamage;
 
 var dogHealth =  $('#dogHealth'),
-	attackBTN = $('#dogAttack'),
+	attackBTN3 = $('#dogAttack'),
+	dogDamage;
+
+var dogHealth =  $('#dogHealth'),
+	attackBTN4 = $('#dogBigAttack'),
 	dogDamage;
 
 // Set up the constructors for the cat and dog
@@ -42,7 +50,10 @@ var Cat  = function (options){
 	this.name = options.name;
 	this.health = 100;
 	this.attack = function (target) {
-		process.attack(this, target);
+		target.health = target.health - 10;
+	};
+	this.bigattack = function (target) {
+		target.health = target.health - Math.round(2.5);
 	};
 	this.elem = options.elem;
 };
@@ -52,7 +63,10 @@ var Dog  = function (options){
 	this.name = options.name;
 	this.health = 100;
 	this.attack = function (target) {
-	process.attack(this, target);
+		target.health = target.health - 10;
+	};
+	this.attack = function (target) {
+		target.health = target.health - Math.round(2.5);
 	};
 	this.elem = options.elem;
 };
@@ -68,10 +82,54 @@ var fido = new Dog ({
 	elem: $('.dog')
 	});
 
+//TO ATTACK DOG OR THE CAT
 
-//
+var health = 
+	catDamage;
+	dogDamage;
 
 
+attackBTN1.on('click', function () {
+  	fifi.attack(fido);
+});
+
+attackBTN2.on('click', function () {
+  	fifi.attack(fido);
+});
+
+attackBTN3.on('click', function () {
+  	fido.attack(fifi);
+});
+
+attackBTN4.on('click', function () {
+  	fido.attack(fifi);
+});
+
+var attack = function (cat, dog) {
+};
+
+attackBTN1.prop("disabled", false).next("Next turn");
+
+
+
+// var dog.health -=
+// 	dogDamage;
+
+
+// if (attackee.health > 0) {
+// 	attackee.elem.find('input').value(attackee.health);
+// }
+
+// if (attackee instanceofCat){
+// 	_.delay(process.attack,1000, attackee, attacker);
+// }
+
+// }else{
+// 	if(attackee instanceofPlayer) }
+// 		"You lose"
+// 	$('body').empty().css('background', green);
+
+ 	
 
 
 
