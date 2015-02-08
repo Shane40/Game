@@ -4,7 +4,14 @@
 
 // Custom Styles
 body {
-  @include background-image(linear-gradient(left, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 43%, rgba(255,255,255,1) 77%, rgba(255,255,255,1) 100%));
+background-color: silver;
+background-image: linear-gradient(335deg, #b00 23px, transparent 23px),
+linear-gradient(155deg, #d00 23px, transparent 23px),
+linear-gradient(335deg, #b00 23px, transparent 23px),
+linear-gradient(155deg, #d00 23px, transparent 23px);
+background-size: 58px 58px; 
+background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+height: 930px;
 }
 
 .container{
@@ -14,7 +21,7 @@ body {
   line-height: 30px;
   background-color: none;
   border-radius: 6px;
-  border: 4px double hsla(0, 58%, 50%, 1);
+  border: 8px double lightgray;
   padding: 60px;
   overflow: auto;
 
@@ -32,16 +39,15 @@ body {
     }
   
   h1 {
-    font-size: 210px;
+    font-size: 207px;
     margin-top: 60px;
     margin-left: -5px;
     width: 900px;
-    // font-family: 'Raleway', sans-serif;
     font-family: 'Patua One', cursive;
     line-height: 1;
     margin-bottom: 0px;
     text-transform: uppercase;
-    color: hsla(0, 58%, 50%, 1);
+    color: HSLA(0, 100%, 47%, 1);
     }
       h2 {
     font-size: 93px;
@@ -54,7 +60,14 @@ body {
     margin-bottom: 12px;
     text-transform: uppercase;
     }
-
+    h3{
+      font-size: 27px;
+      font-family: 'Patua One', cursive;
+      margin-top: 5px;
+      line-height: 31px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
     .cat {
       margin-left: 122px;
       font-family: 'Raleway', sans-serif;
@@ -88,7 +101,7 @@ body {
       width: 150px;
       float: left;
       color: white;
-      background-color: hsla(0, 58%, 50%, 1);
+      background-color: HSLA(0, 100%, 47%, 1);
       margin-bottom: 0px;
       margin-top: 8px;
       box-shadow: 5px 5px 5px #888888;

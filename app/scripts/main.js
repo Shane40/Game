@@ -83,15 +83,15 @@ var fido = new Dog ({
 	});
 
 //TO ATTACK DOG OR THE CAT
+var catClaws = $('#catAttack');
 
-var health = 
-	catDamage;
-	dogDamage;
-
-
-attackBTN1.on('click', function () {
-  	fifi.attack(fido);
+catClaws.on('click', function () {
+  	fifi.attack(fido); 
 });
+
+
+attackBTN1.prop('disabled', false);
+
 
 attackBTN2.on('click', function () {
   	fifi.attack(fido);
@@ -105,10 +105,14 @@ attackBTN4.on('click', function () {
   	fido.attack(fifi);
 });
 
-var attack = function (cat, dog) {
-};
 
-attackBTN1.prop("disabled", false).next("Next turn");
+damage = _.random(5, 20);
+
+
+// var attack = function (cat, dog) {
+// };
+
+// attackBTN1.prop("disabled", false).next("Next turn");
 
 
 
