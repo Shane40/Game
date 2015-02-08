@@ -27,6 +27,12 @@ console.log("This is the scary game");
 
 // Set up variables and player elements
 
+var userChoice = prompt("Are you ready to play?");
+
+if (userChoice == "yes" || "Yes" || "Y" || "y") {
+    prompt("Get ready to play");
+};
+
 var catHealth = $('#catHealth'),
 	attackBTN1 = $('#catAttack'),
 	catDamage;
@@ -87,6 +93,7 @@ var catClaws = $('#catAttack');
 
 catClaws.on('click', function () {
   	fifi.attack(fido); 
+  	return $('#catAttack');
 });
 
 
