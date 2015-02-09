@@ -113,34 +113,5 @@ attackBTN4.on('click', function () {
 });
 
 
-damage = _.random(5, 20);
-
-
-// var attack = function (cat, dog) {
-// };
-
-// attackBTN1.prop("disabled", false).next("Next turn");
-
-
-
-// var dog.health -=
-// 	dogDamage;
-
-
-// if (attackee.health > 0) {
-// 	attackee.elem.find('input').value(attackee.health);
-// }
-
-// if (attackee instanceofCat){
-// 	_.delay(process.attack,1000, attackee, attacker);
-// }
-
-// }else{
-// 	if(attackee instanceofPlayer) }
-// 		"You lose"
-// 	$('body').empty().css('background', green);
-
- 	
-
 
 
